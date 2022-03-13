@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Dev\\Godot\\GodotGPSBase\\Godot_GPS_Base\\android\\build\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt\\values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Dev\\Godot\\GodotGPSBase\\Godot_GPS_Base\\android\\build\\res\\values-pt\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "70",
+                        "endOffsets": "181"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "73",
+                        "endOffsets": "124"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Kim\\.gradle\\caches\\transforms-3\\c5eaa7d939abb2d757f863a6b5340cdd\\transformed\\core-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "129",
+                        "endColumns": "100",
+                        "endOffsets": "225"
+                    }
+                }
+            ]
+        }
+    ]
+}
