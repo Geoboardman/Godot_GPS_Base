@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="org.godotengine.godotopenstreetmap"
+3    package="org.godotengine.godotgpsbase"
 4    android:installLocation="auto"
 5    android:versionCode="1"
 6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
@@ -26,119 +26,123 @@
 19        android:required="true" />
 19-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:10:52-75
 20
-21    <instrumentation
-21-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:5-16:60
-22        android:name=".GodotInstrumentation"
-22-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:13:9-45
-23        android:icon="@mipmap/icon"
-23-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:14:9-36
-24        android:label="@string/godot_project_name_string"
-24-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:15:9-58
-25        android:targetPackage="org.godotengine.$genname" />
-25-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:16:9-57
-26    <!--
-27    You need to choose this two permissions from Export menu.
-28    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-29    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-30    -->
-31    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-31-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:17:5-81
-31-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:17:22-78
-32    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-32-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:18:5-79
-32-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:18:22-76
-33
-34    <application
-34-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:5-81:19
-35        android:allowBackup="false"
-35-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:68-95
-36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-36-->[androidx.core:core:1.2.0] C:\Users\Kim\.gradle\caches\transforms-3\c5eaa7d939abb2d757f863a6b5340cdd\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
-37        android:debuggable="true"
-38        android:hasFragileUserData="false"
-38-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:118-152
-39        android:icon="@mipmap/icon"
-39-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:238-265
-40        android:isGame="true"
-40-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:96-117
-41        android:label="@string/godot_project_name_string"
-41-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:18-67
-42        android:requestLegacyExternalStorage="false" >
-42-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:153-197
-43        <activity
-43-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:53:9-75:20
-44            android:name="com.godot.game.GodotApp"
-44-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:54:13-37
-45            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
-45-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:60:13-141
-46            android:excludeFromRecents="false"
-46-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:58:13-47
-47            android:label="@string/godot_project_name_string"
-47-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:55:13-62
-48            android:launchMode="singleTask"
-48-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:57:13-44
-49            android:resizeableActivity="false"
-49-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:61:13-47
-50            android:screenOrientation="landscape"
-50-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:59:13-50
-51            android:theme="@style/GodotAppSplashTheme" >
-51-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:56:13-55
-52            <intent-filter>
-52-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:67:13-74:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:68:17-69
-53-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:68:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:69:17-77
-55-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:69:27-74
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:5-67
+21-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:22-64
+22
+23    <instrumentation
+23-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:12:5-17:60
+24        android:name=".GodotInstrumentation"
+24-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:14:9-45
+25        android:icon="@mipmap/icon"
+25-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:15:9-36
+26        android:label="@string/godot_project_name_string"
+26-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:16:9-58
+27        android:targetPackage="org.godotengine.$genname" />
+27-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:17:9-57
+28    <!--
+29    You need to choose this two permissions from Export menu.
+30    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+31    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+32    -->
+33    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+33-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:17:5-81
+33-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:17:22-78
+34    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+34-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:18:5-79
+34-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:18:22-76
+35
+36    <application
+36-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:5-81:19
+37        android:allowBackup="false"
+37-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:68-95
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.2.0] C:\Users\Kim\.gradle\caches\transforms-3\c5eaa7d939abb2d757f863a6b5340cdd\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:hasFragileUserData="false"
+40-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:118-152
+41        android:icon="@mipmap/icon"
+41-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:238-265
+42        android:isGame="true"
+42-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:96-117
+43        android:label="@string/godot_project_name_string"
+43-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:18-67
+44        android:requestLegacyExternalStorage="false" >
+44-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:153-197
+45        <activity
+45-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:53:9-75:20
+46            android:name="com.godot.game.GodotApp"
+46-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:54:13-37
+47            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+47-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:60:13-141
+48            android:excludeFromRecents="false"
+48-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:58:13-47
+49            android:label="@string/godot_project_name_string"
+49-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:55:13-62
+50            android:launchMode="singleTask"
+50-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:57:13-44
+51            android:resizeableActivity="false"
+51-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:61:13-47
+52            android:screenOrientation="landscape"
+52-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:59:13-50
+53            android:theme="@style/GodotAppSplashTheme" >
+53-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:56:13-55
+54            <intent-filter>
+54-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:67:13-74:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:68:17-69
+55-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:68:25-66
 56
-57                <!--
-58                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
-59                platforms.
-60                -->
-61                <category android:name="com.oculus.intent.category.VR" />
-61-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:73:17-74
-61-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:73:27-71
-62            </intent-filter>
-63        </activity>
-64        <!-- Records the version of the Godot editor used for building -->
-65        <meta-data
-66            android:name="org.godotengine.editor.version"
-67            android:value="3.4.2.stable" /> <!-- Records the version of the Godot library -->
-68        <meta-data
-68-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:19:9-21:44
-69            android:name="org.godotengine.library.version"
-69-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:13-59
-70            android:value="3.4.2.stable" />
-70-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-41
-71
-72        <service android:name="org.godotengine.godot.GodotDownloaderService" />
-72-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:9-80
-72-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:18-77
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:69:17-77
+57-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:69:27-74
+58
+59                <!--
+60                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+61                platforms.
+62                -->
+63                <category android:name="com.oculus.intent.category.VR" />
+63-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:73:17-74
+63-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:73:27-71
+64            </intent-filter>
+65        </activity>
+66        <!-- Records the version of the Godot editor used for building -->
+67        <meta-data
+68            android:name="org.godotengine.editor.version"
+69            android:value="3.4.2.stable" /> <!-- Records the version of the Godot library -->
+70        <meta-data
+70-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:19:9-21:44
+71            android:name="org.godotengine.library.version"
+71-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:13-59
+72            android:value="3.4.2.stable" />
+72-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-41
 73
-74        <meta-data
-74-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:21:9-23:79
-75            android:name="org.godotengine.plugin.v1.LocationPlugin"
-75-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:22:13-68
-76            android:value="com.cacaosd.locationplugin.LocationKotlinPlugin" />
-76-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:23:13-76
-77
-78        <activity
-78-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-79            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-79-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-80            android:exported="false"
-80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-81            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-82
-83        <meta-data
-83-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-84            android:name="com.google.android.gms.version"
-84-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-85            android:value="@integer/google_play_services_version" />
-85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-86    </application>
-87
-88</manifest>
+74        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+74-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:9-80
+74-->[godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:18-77
+75
+76        <meta-data
+76-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:21:9-23:79
+77            android:name="org.godotengine.plugin.v1.LocationPlugin"
+77-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:22:13-68
+78            android:value="com.cacaosd.locationplugin.LocationKotlinPlugin" />
+78-->[LocationPlugin.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\542a3f94151a78f0574947ac036b9ea3\transformed\jetified-LocationPlugin.debug\AndroidManifest.xml:23:13-76
+79
+80        <activity
+80-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+81            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+81-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+82            android:exported="false"
+82-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+83            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+83-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\a0872568d70172d04217e358f0002d99\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+84
+85        <meta-data
+85-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+86            android:name="com.google.android.gms.version"
+86-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+87            android:value="@integer/google_play_services_version" />
+87-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Kim\.gradle\caches\transforms-3\cd8b73b384c299300fd2264c8e394feb\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+88    </application>
+89
+90</manifest>

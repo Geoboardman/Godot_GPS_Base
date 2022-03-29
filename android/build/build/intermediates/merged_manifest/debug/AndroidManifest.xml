@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.godotengine.godotopenstreetmap"
+    package="org.godotengine.godotgpsbase"
     android:installLocation="auto"
     android:versionCode="1"
     android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
@@ -17,6 +17,8 @@
     <uses-feature
         android:glEsVersion="0x00030000"
         android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <instrumentation
         android:name=".GodotInstrumentation"

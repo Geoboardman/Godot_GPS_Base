@@ -78,8 +78,8 @@ func _physics_process(delta):
 			translate_y += 1
 		if translate_x != 0 || translate_y != 0:
 			var direction = 50*Vector2(translate_x, translate_y).rotated(rotate_y.get_rotation().y)
-			if Input.is_action_pressed("run"):
-				direction *= 3
+			#if Input.is_action_pressed("run"):
+				#direction *= 3
 			set_translation(get_translation()+delta*Vector3(direction.x, 0, direction.y))
 		else:
 			return

@@ -39,8 +39,11 @@ func update_data(data):
 				roads_vertices.append(Vector3(a.x-n.x, road_height, a.y-n.y))
 				roads_normals.append(Vector3(0, 1, 0))
 	var surface = [ roads_vertices, roads_normals, null, null, null, null, null, null, null ]
-	generated_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLE_STRIP, surface)
-	generated_mesh.surface_set_material(generated_mesh.get_surface_count()-1, material)
+	if surface != null:
+		generated_mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLE_STRIP, surface)
+		generated_mesh.surface_set_material(generated_mesh.get_surface_count()-1, material)
+	else:
+		print("surface is null")
 	call_deferred("on_updated", generated_mesh)
 
 func on_updated(generated_mesh):

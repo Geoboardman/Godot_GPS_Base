@@ -7,7 +7,8 @@ signal new_location(lat, lon)
 
 func _ready():
 	var f : File = File.new()
-	f.open("res://openstreetmap_demos/cities.json", File.READ)
+	if f.open("res://openstreetmap_demos/cities.json", File.READ) != OK:
+		print("Error opening demos/cities.json")
 	cities = parse_json(f.get_as_text())
 	f.close()
 	for c in cities:
@@ -26,5 +27,5 @@ func select_city(i):
 	$Longitude.text = str(cities[country_index].cities[i].lon)
 	commit_location()
 
-func commit_location(unused_param = null):
+func commit_location():
 	emit_signal("new_location", float($Latitude.text), float($Longitude.text))

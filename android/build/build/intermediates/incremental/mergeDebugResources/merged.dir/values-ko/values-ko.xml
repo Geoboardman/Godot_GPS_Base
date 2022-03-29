@@ -18,7 +18,7 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"스마트폰에서 열기"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"로그인"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google 계정으로 로그인"</string>
-    <string name="godot_project_name_string">godot-openstreetmap</string>
+    <string name="godot_project_name_string">GodotGPSBase</string>
     <string name="kilobytes_per_second">%1$s KB/s</string>
     <string name="notification_download_complete">다운로드 완료</string>
     <string name="notification_download_failed">다운로드 실패</string>

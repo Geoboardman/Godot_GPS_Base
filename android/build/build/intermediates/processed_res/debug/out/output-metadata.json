@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "org.godotengine.godotopenstreetmap",
+  "applicationId": "org.godotengine.godotgpsbase",
   "variantName": "debug",
   "elements": [
     {

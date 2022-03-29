@@ -32,9 +32,9 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Kim\.gradle\c
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Kim\.gradle\caches\transforms-3\a014d411094aa2ba92d687f5c6fff184\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Kim\.gradle\caches\transforms-3\614d0f46931fd8cb0dfae9cbf1055ba0\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\Kim\.gradle\caches\transforms-3\780b23ac0107a53910baedbe87dfe02e\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:2:1-33:12
 	package
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:4:5-29
 		INJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml
@@ -114,7 +114,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Ki
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:68-95
 		REJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:68-95
 	tools:replace
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:22:9-123
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:23:9-123
 	android:isGame
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:96-117
 		REJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:31:96-117
@@ -125,7 +125,7 @@ meta-data#xr_mode_metadata_name
 ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:42:9-44:54
 REJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:42:9-44:54
 	tools:node
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:26:20-39
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:27:20-39
 	android:value
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:44:13-51
 	android:name
@@ -134,7 +134,7 @@ meta-data#xr_hand_tracking_metadata_name
 ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:49:9-51:62
 REJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:49:9-51:62
 	tools:node
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:27:20-39
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:28:20-39
 	android:value
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:51:13-60
 	android:name
@@ -168,14 +168,14 @@ MERGED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManife
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:56:13-55
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:56:13-55
 	tools:replace
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:28:58-126
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:29:58-126
 	android:name
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:54:13-37
 meta-data#com.oculus.vr.focusaware
 ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:65:13-87
 REJECTED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:65:13-87
 	tools:node
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:29:24-43
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:30:24-43
 	android:value
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:65:64-84
 	android:name
@@ -258,19 +258,23 @@ ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\Andr
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:10:19-51
 	android:required
 		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:10:52-75
+uses-permission#android.permission.INTERNET
+ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:22-64
 instrumentation
-ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:11:5-16:60
+ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:12:5-17:60
 REJECTED from [godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:10:5-14:57
 	tools:node
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:12:9-29
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:13:9-29
 	android:label
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:15:9-58
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:16:9-58
 	android:icon
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:14:9-36
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:15:9-36
 	android:targetPackage
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:16:9-57
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:17:9-57
 	android:name
-		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:13:9-45
+		ADDED from C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\src\debug\AndroidManifest.xml:14:9-45
 meta-data#org.godotengine.library.version
 ADDED from [godot-lib.debug.aar] C:\Users\Kim\.gradle\caches\transforms-3\7d496d812684c77fc04000caf95fd2e1\transformed\jetified-godot-lib.debug\AndroidManifest.xml:19:9-21:44
 	android:value

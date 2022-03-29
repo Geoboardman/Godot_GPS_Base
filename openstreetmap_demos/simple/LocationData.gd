@@ -4,12 +4,13 @@ var singleton
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	get_tree().connect("on_request_permission_result", self, "result")
-	if(OS.request_permissions()):
-		result("", true)
-	pass # Replace with function body.
+	if OS.get_name() == "android":
+		if get_tree().connect("on_request_permission_result", self, "result") != OK:
+			print("Error connecting to on_request_permission_result")
+		if(OS.request_permissions()):
+			result("", true)
 
-func result(permission, granted):
+func result(_permission, granted):
 	if granted:
 		if Engine.has_singleton("LocationPlugin"):
 			singleton = Engine.get_singleton("LocationPlugin")
@@ -17,17 +18,15 @@ func result(permission, granted):
 			singleton.connect("onLastKnownLocation", self, "gotLastKnown")
 			singleton.connect("onLocationError", self, "gotLocationError")
 			singleton.startLocationUpdates(6000, 10000)
-	pass
 
 func gotLocationUpdate(locData):
 	updateUserInterface(locData)
-	pass
 	
 func gotLastKnown(locData):
 	updateUserInterface(locData)
-	pass
 	
 func gotLocationError(error, message):
+	print("Error getting location %s %s", error, message)
 	pass
 
 func updateUserInterface(locData):
@@ -38,13 +37,6 @@ func updateUserInterface(locData):
 	$Values/altitudeValue.text = str(locData.altitude)
 	$Values/speedValue.text = str(locData.speed)
 	$Values/timeValue.text = str(locData.time)	
-	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 
 func _on_Button_button_down():
 	singleton.getLastKnowLocation()
-	pass # Replace with function body.

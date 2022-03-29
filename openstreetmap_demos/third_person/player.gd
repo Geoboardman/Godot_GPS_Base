@@ -47,12 +47,14 @@ func _physics_process(delta):
 	previous_position = translation
 	motion.x = h_motion.x
 	motion.z = h_motion.y
+	"""
 	if map == null:
 		map = get_node("../Map")
 	else:
 		map.set_center(Vector2(translation.x, translation.z))
+	"""
 
-func teleport(lat, lon):
+func teleport(_lat, _lon):
 	translation = Vector3(0, 0, 0)
 	motion = Vector3(0, 0, 0)
 	previous_position = Vector3(0, 0, 0)

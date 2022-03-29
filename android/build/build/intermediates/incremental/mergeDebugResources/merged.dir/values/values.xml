@@ -109,7 +109,7 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
-    <string name="godot_project_name_string">godot-openstreetmap</string>
+    <string name="godot_project_name_string">GodotGPSBase</string>
     <string name="kilobytes_per_second">%1$s KB/s</string>
     <string name="notification_download_complete">Download complete</string>
     <string name="notification_download_failed">Download unsuccessful</string>
