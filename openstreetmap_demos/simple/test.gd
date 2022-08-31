@@ -2,30 +2,35 @@ extends Spatial
 
 onready var camera = get_node("Camera")
 onready var map = get_node("Map")
-var gps_singleton
+onready var player = get_node("Player")
 
+var singleton
 var quads = []
 var texture_cache = {}
 var reference_position = Vector2(0, 0)
-var x = null
-var y = null
 var event_timestamp = 0
-var gps_loaded = false
-var lat = 47.6750793
-var lon = -122.1140707
+
+var glat = 47.6750793
+var glon = -122.1140707
 
 func _ready():
-	if OS.get_name() == "android":
-		setup_gps()
-	else:
-		teleport(lat, lon)
-
-func setup_gps():
-	if OS.get_name() == "android":
-		if get_tree().connect("on_request_permission_result", self, "result") != OK:
-			print("Error connecting to on_request_permission_result")
+	if OS.get_name() == "Android":
+		get_tree().connect("on_request_permission_result", self, "result")
 		if(OS.request_permissions()):
-			connect_gps_signals("", true)
+			result("", true)
+	teleport(glat, glon)
+
+func result(permission, granted):
+	print("connect gps signals")
+	if granted:
+		print("granted")
+		if Engine.has_singleton("LocationPlugin"):
+			print("engine has location plug")
+			singleton = Engine.get_singleton("LocationPlugin")
+			singleton.connect("onLocationUpdates", self, "gotLocationUpdate")
+			singleton.connect("onLastKnownLocation", self, "gotLastKnown")
+			singleton.connect("onLocationError", self, "gotLocationError")
+			singleton.startLocationUpdates(6000, 10000)
 
 func _on_Ground_input_event(_c, event, click_pos, _click_normal, _shape_idx):
 	if event is InputEventMouseButton:
@@ -36,31 +41,42 @@ func _on_Ground_input_event(_c, event, click_pos, _click_normal, _shape_idx):
 				if event.doubleclick:
 					pass
 				elif camera != null:
-					camera.set_target_pos(click_pos)
-					map.set_center(Vector2(click_pos.x, click_pos.z))
+					player.set_target_pos_mouse(click_pos)
+					#camera.set_target_pos(click_pos)
+					#map.set_center(Vector2(click_pos.x, click_pos.z))
 
 func teleport(lat : float, lon : float):
 	if map != null:
 		var default_pos = osm.pos2tile(lon, lat)
 		map.reference_position = Vector2(default_pos.x, default_pos.y)
 		map.set_center(Vector2(0, 0))
-		gps_loaded = true
 
-func connect_gps_signals(_permission, granted):
-	if granted:
-		if Engine.has_singleton("LocationPlugin"):
-			gps_singleton = Engine.get_singleton("LocationPlugin")
-			gps_singleton.connect("onLocationUpdates", self, "gotLocationUpdate")
-			gps_singleton.connect("onLastKnownLocation", self, "gotLastKnown")
-			gps_singleton.connect("onLocationError", self, "gotLocationError")
-			gps_singleton.startLocationUpdates(6000, 10000)
+func updateLocationText(latitude, longitude):
+	var lat = str(latitude)
+	var lon = str(longitude)
+	var newPos = osm.pos2tile(longitude, latitude)
+	newPos -= map.reference_position
+	newPos *= osm.TILE_SIZE
+	$UserInterface2/LatLabel.text = "Latitude %s" % lat
+	$UserInterface2/LonLabel.text = "Longitude %s" % lon
+	$UserInterface2/PlayerX.text = "PlayerX %s" % str(newPos.x)
+	$UserInterface2/PlayerZ.text = "PlayerX %s" % str(newPos.y)
 
 func gotLocationUpdate(locData):
-	teleport(locData.latitude, locData.longitude)
+	updateLocationText(locData.latitude, locData.longitude)
+	if map != null:	
+		teleport(locData.latitude, locData.longitude)
+		player.set_target_pos(locData, map.reference_position)
 	
 func gotLastKnown(locData):
-		teleport(locData.latitude, locData.longitude)
-	
-func gotLocationError(error, message):
-	print("Error getting location %s %s", error, message)
-	pass
+	updateLocationText(locData.latitude, locData.longitude)
+	teleport(locData.latitude, locData.longitude)
+
+func _on_GPSAndroid_locationUpdate(locData):
+	gotLocationUpdate(locData)
+	print("location updating")
+
+
+func _on_GPSAndroid_lastKnownLocation(locData):
+	gotLastKnown(locData)
+	print("got last known")

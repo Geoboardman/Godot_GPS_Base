@@ -6,7 +6,7 @@ export var height = 2.0
 func _ready():
 	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var player = get_node("../Player")
 	if player != null:
 		var pos = get_global_transform().origin

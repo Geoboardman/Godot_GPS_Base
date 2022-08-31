@@ -49,7 +49,7 @@
             android:label="@string/godot_project_name_string"
             android:launchMode="singleTask"
             android:resizeableActivity="false"
-            android:screenOrientation="landscape"
+            android:screenOrientation="portrait"
             android:theme="@style/GodotAppSplashTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

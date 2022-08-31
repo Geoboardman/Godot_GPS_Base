@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://openstreetmap_demos/simple/test.gd" type="Script" id=1]
+[ext_resource path="res://openstreetmap_demos/simple/GPSAndroid.gd" type="Script" id=2]
 [ext_resource path="res://openstreetmap_demos/third_person/player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://openstreetmap_demos/third_person/camera.tscn" type="PackedScene" id=4]
 [ext_resource path="res://addons/openstreetmap/map.tscn" type="PackedScene" id=5]
@@ -50,7 +51,6 @@ transform = Transform( 1, 0, 0, 0, 0.325859, 0.945418, 0, -0.945418, 0.325859, 0
 [node name="UserInterface" parent="." instance=ExtResource( 6 )]
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.481, 6, 3.463 )
 run_speed = 10.0
 
 [node name="Camera" parent="." instance=ExtResource( 4 )]
@@ -61,3 +61,51 @@ height = 8.0
 
 [node name="CollisionShape" type="CollisionShape" parent="Ground"]
 shape = SubResource( 3 )
+
+[node name="UserInterface2" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LonLabel" type="Label" parent="UserInterface2"]
+margin_left = 16.0
+margin_top = 72.0
+margin_right = 83.0
+margin_bottom = 86.0
+text = "Longitude:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LatLabel" type="Label" parent="UserInterface2"]
+margin_left = 24.0
+margin_top = 96.0
+margin_right = 80.0
+margin_bottom = 110.0
+text = "Latitude:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerX" type="Label" parent="UserInterface2"]
+margin_left = 24.0
+margin_top = 128.0
+margin_right = 80.0
+margin_bottom = 142.0
+text = "PlayerX:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerZ" type="Label" parent="UserInterface2"]
+margin_left = 24.0
+margin_top = 144.0
+margin_right = 80.0
+margin_bottom = 158.0
+text = "PlayerZ:"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -60,7 +60,7 @@ func gen_twm(in_file, out_file, x, y):
 	var count = 0
 	var last_node
 	var last_node2
-	var rect = Rect2(Vector2(0, 0), Vector2(osm.TILE_SIZE, osm.TILE_SIZE))
+	var rect = Rect2(Vector2(0, 0), Vector2(TILE_SIZE, TILE_SIZE))
 	while parser.read() == 0:
 		var pop_item = false
 		var type = parser.get_node_type()
@@ -73,7 +73,7 @@ func gen_twm(in_file, out_file, x, y):
 			if name == "node":
 				var pos = pos2tile(float(parser.get_named_attribute_value("lon")), float(parser.get_named_attribute_value("lat")))
 				pos -= Vector2(x, y)
-				pos *= osm.TILE_SIZE
+				pos *= TILE_SIZE
 				var id = parser.get_named_attribute_value("id")
 				if nodes.has(id):
 					print("Duplicate node "+id)

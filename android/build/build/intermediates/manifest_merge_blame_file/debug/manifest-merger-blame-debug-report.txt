@@ -83,7 +83,7 @@
 50-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:57:13-44
 51            android:resizeableActivity="false"
 51-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:61:13-47
-52            android:screenOrientation="landscape"
+52            android:screenOrientation="portrait"
 52-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:59:13-50
 53            android:theme="@style/GodotAppSplashTheme" >
 53-->C:\Dev\Godot\GodotGPSBase\Godot_GPS_Base\android\build\AndroidManifest.xml:56:13-55
